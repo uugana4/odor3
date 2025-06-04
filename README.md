@@ -54,6 +54,7 @@
 
 Үр дүн:![4F82FFE1-3122-4D4F-B7C1-C70DEF993356](https://github.com/user-attachments/assets/5ab64988-523a-4c66-aaa8-b038d42303c7)
 
+Үр дүн: ![43EC0F86-3D81-482F-851C-70786D3E43BA](https://github.com/user-attachments/assets/10adaa79-3613-47f1-86d0-af49e9968bd4)
 
 
 
