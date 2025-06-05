@@ -2,12 +2,12 @@ import java.util.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-// User Role enum
+
 enum Role {
     ADMIN, USER
 }
 
-// User class
+
 class User {
     private String username;
     private String password;
@@ -24,7 +24,7 @@ class User {
     public Role getRole() { return role; }
 }
 
-// Product class
+
 class Product {
     private String name;
     private double price;
@@ -67,7 +67,7 @@ class Product {
     public DiscountRule getDiscountRule() { return discountRule; }
 }
 
-// DiscountRule class
+
 class DiscountRule {
     private double percentage;
     private Date startDate, endDate;
@@ -88,7 +88,7 @@ class DiscountRule {
     }
 }
 
-// OrderItem class
+
 class OrderItem {
     private Product product;
     private int quantity;
@@ -105,7 +105,7 @@ class OrderItem {
     }
 }
 
-// SaleOrder class
+
 class SaleOrder {
     private List<OrderItem> items = new ArrayList<>();
     private Date date;
@@ -129,14 +129,14 @@ class SaleOrder {
     }
 }
 
-// Main class
+
 public class Onlyshop{
     static Scanner sc = new Scanner(System.in);
     static List<User> users = new ArrayList<>();
     static List<Product> catalog = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
-        // Урьдчилан хэрэглэгч үүсгэх
+       
         users.add(new User("admin", "admin123", Role.ADMIN));
         users.add(new User("user1", "user123", Role.USER));
         users.add(new User("user2", "user234", Role.USER));
