@@ -1,4 +1,4 @@
-// ажиллуулахдаа terminal дээр `java Extended` гэж бичээрэй
+
 import java.util.*;
 import java.io.*;
 import java.time.*;
@@ -92,7 +92,7 @@ class Order {
     public List<Product> getProducts() { return products; }
     public List<Integer> getQuantities() { return quantities; }
 
-    // Файлд хадгалах/уншихад зориулсан нэмэлт конструктор
+    
     public Order(int orderId, double total, OrderStatus status, String paymentId, LocalDateTime date) {
         this.orderId = orderId;
         this.total = total;
@@ -108,7 +108,7 @@ public class Extended {
     static List<Product> products = new ArrayList<>();
     static Map<String, Double> coupons = new HashMap<>();
 
-    // --- Бараа хадгалах/унших ---
+    
     static void saveProductsToFile(String filename) {
         try (PrintWriter pw = new PrintWriter(new FileWriter(filename))) {
             for (Product p : products) {
@@ -140,7 +140,7 @@ public class Extended {
         }
     }
 
-    // --- Хэрэглэгч хадгалах/унших ---
+  
     static void saveUsersToFile(String filename) {
         try (PrintWriter pw = new PrintWriter(new FileWriter(filename))) {
             for (User u : users) {
@@ -171,12 +171,12 @@ public class Extended {
         }
     }
 
-    // --- Захиалга хадгалах/унших ---
+   
     static void saveOrdersToFile(String filename) {
         try (PrintWriter pw = new PrintWriter(new FileWriter(filename))) {
             for (User u : users) {
                 for (Order o : u.getOrders()) {
-                    // Захиалгын үндсэн мэдээлэл
+                    
                     pw.printf("%s,%d,%.2f,%s,%s,%s\n",
                         u.getUsername(),
                         o.getOrderId(),
@@ -185,7 +185,7 @@ public class Extended {
                         o.getPaymentId() == null ? "" : o.getPaymentId(),
                         o.getDate().toString()
                     );
-                    // Захиалгын бараа бүрийг тусад нь бичнэ
+                    
                     for (int i = 0; i < o.getProducts().size(); i++) {
                         Product p = o.getProducts().get(i);
                         int qty = o.getQuantities().get(i);
@@ -263,7 +263,7 @@ public class Extended {
             } else if (c.equals("2")) {
                 signUp();
             } else if (c.equals("0")) {
-                // Дуусахад файлд хадгалах
+               
                 saveProductsToFile("products.txt");
                 saveUsersToFile("users.txt");
                 saveOrdersToFile("orders.txt");
