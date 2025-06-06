@@ -15,6 +15,6 @@ public abstract class AbstractProduct {
     public double getPrice() { return price; }
     public void setPrice(double price) { this.price = price; }
 
-    // Абстракт арга зам, охин классууд заавал хэрэгжүүлэх
+  
     public abstract double getFinalPrice(int quantity, Date currentDate);
 }
