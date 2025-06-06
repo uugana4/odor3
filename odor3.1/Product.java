@@ -30,7 +30,7 @@ public class Product extends AbstractProduct {
         }
     }
 
-    // Getter & Setter
+  
     public void setTotalStock(int newStock) {
         if (newStock >= soldQuantity) {
             this.totalStock = newStock;
