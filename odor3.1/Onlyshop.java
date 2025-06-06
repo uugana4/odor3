@@ -40,22 +40,21 @@ public class Onlyshop {
         }
     }
 
-    // User menu method stub
+    
     public static void userMenu() {
         System.out.println("Хэрэглэгчийн цэс (userMenu) дуудагдлаа. Энд хэрэглэгчийн үйлдлүүдийг хэрэгжүүлнэ.");
-        // TODO: Хэрэглэгчид зориулсан үйлдлүүдийг энд нэмнэ үү.
+        
     }
 
-    // Admin menu method stub
+  
     public static void adminMenu() {
         System.out.println("Админ цэс (adminMenu) дуудагдлаа. Энд админ үйлдлүүдийг хэрэгжүүлнэ.");
         // TODO: Админд зориулсан үйлдлүүдийг энд нэмнэ үү.
     }
 
-    // ... Энд таны бүх бусад методууд adminMenu(), userMenu(), addProduct(), editProduct(), setDiscount(), printCatalog(), placeOrder() гэх мэт байх болно ...
-    // Тэдгээрийг мөн тусдаа файлуудад салгах шаардлагагүй, main класс дотор хэвээрээ байж болно.
+  
 
-    // Login method implementation
+ 
     public static User login() {
         System.out.print("Хэрэглэгчийн нэр: ");
         String username = sc.nextLine();
@@ -69,7 +68,7 @@ public class Onlyshop {
         return null;
     }
 
-    // Sign Up method implementation
+
     public static void signUp() {
         System.out.print("Шинэ хэрэглэгчийн нэр: ");
         String username = sc.nextLine();
@@ -86,7 +85,5 @@ public class Onlyshop {
         System.out.println("Шинэ хэрэглэгч амжилттай бүртгэгдлээ!");
     }
     
-    // Та хүсвэл эдгээрийг өөр файлуудад салгаж ч болно, гэхдээ main класс ихэвчлэн нэг файлд байхад амар байдаг.
-
-    // Жич: import болон бусад бүх хэрэгтэй классуудыг импорт хийсэн байгаарай.
+   
 }
