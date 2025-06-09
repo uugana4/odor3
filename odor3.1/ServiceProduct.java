@@ -4,7 +4,7 @@ public class ServiceProduct extends Product {
     private String serviceDetails;
 
     public ServiceProduct(String name, double price, String serviceDetails) {
-        super(name, price, 0); // Үйлчилгээ тул stock 0 байна гэж үзнэ
+        super(name, price, 0); 
         this.serviceDetails = serviceDetails;
     }
 
@@ -13,7 +13,7 @@ public class ServiceProduct extends Product {
 
     @Override
     public double getFinalPrice(int quantity, Date currentDate) {
-        // Абстракт функцыг шууд ерөнхий загвараас удамшуулахад заавал хэрэгжүүлэх шаардлагатай
+      
         return getPrice();
     }
 }
